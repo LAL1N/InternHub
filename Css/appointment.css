@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
+@import url('https://db.onlinewebfonts.com/c/c0242a63ef025c10180ad4f1fa95bd19?family=Gordita-Bold');
+@import url('https://db.onlinewebfonts.com/c/0825e48b888e2966c14f17034b133d07?family=Gordita-Regular');
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+img{
+    display: block;
+    width: 100%;
+}
+body{
+    font-family: "Hammersmith One";
+    padding: 3rem 8rem;
+}
+.nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 1rem;
+    font-weight: bold;
+    font-family: 'Gordita-bold';
+    margin-bottom: 20px;
+}
+
+.nav a:hover,
+.nav a.active {
+    color: #385177;
+}
+
+.content{
+    
+    margin-top: 2rem;
+    gap:3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.box{
+    
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+}
+
+
+
+.box > p{
+    font-family: "Gordita-Regular";
+    background-color: #61C3C8;
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+.box > a{
+    padding: .25rem;
+    border-top: 2px solid black;
+    width: 100%;
+    text-align: center;
+    color:black;
+    font-family: "Gordita-Regular";
+}
+
+a:hover{
+    transition: all .2s ease;
+    color: #61C3C8;
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    gap:5rem;
+    flex-grow: 1;
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+    gap:5rem;
+    flex-grow: 1;
+
+}

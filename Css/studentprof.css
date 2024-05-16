@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
+@import url('https://db.onlinewebfonts.com/c/c0242a63ef025c10180ad4f1fa95bd19?family=Gordita-Bold');
+@import url('https://db.onlinewebfonts.com/c/0825e48b888e2966c14f17034b133d07?family=Gordita-Regular');
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+img{
+    display: block;
+    width: 100%;
+}
+
+body{
+    font-family: "Hammersmith One";
+    padding: 3rem 8rem;
+}
+.nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 1rem;
+    font-weight: bold;
+    font-family: 'Gordita-bold';
+    margin-bottom: 20px;
+}
+
+.nav a:hover,
+.nav a.active {
+    color: #385177;
+}
+
+.content{
+        
+    margin-top: 2rem;
+    gap:2rem;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.left{
+    width:60%;
+    background: url('../S-P/1.png')  no-repeat bottom right;
+    background-size: 300px 300px;
+    
+}
+
+.name{
+    margin-top: 36px;
+    font-size: 3.5rem;
+}
+
+.right{
+    width:40%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.right>div{
+    height: 240px;
+    width: 414px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    font-family: "Gordita-Regular";
+    font-size: 2rem;
+}
+
+.appointment{
+    background: url('../S-P/2.png') no-repeat center center;
+    background-size: contain;
+}
+
+.appointment > a{
+    text-decoration: none;
+    color:black;
+    font-size: 1rem;    
+    background-color: inherit;
+    border: 2px solid black;
+    padding: .5rem 4rem .5rem 4rem;
+}
+
+.appointment > a:hover{
+    transition: all .2s ease;
+    background-color: white;
+    color:#385177;
+    border:2px solid #385177;
+}
+.jobreco{
+    text-align: center;
+    color:white;
+    background: url('../S-P/3.png') no-repeat center center;
+    background-size: contain;
+}
+
+.jobreco> a{
+    text-decoration: none;
+    background-color: inherit;
+    font-size: 1rem;    
+    border: 2px solid white;
+    color:white;
+    padding: .5rem 4rem .5rem 4rem;
+}
+
+.jobreco > a:hover{
+    transition: all .2s ease;
+    background-color: white;
+    color:#385177;
+    border:2px solid #385177;;
+}

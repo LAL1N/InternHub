@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
+@import url('https://db.onlinewebfonts.com/c/c0242a63ef025c10180ad4f1fa95bd19?family=Gordita-Bold');
+@import url('https://db.onlinewebfonts.com/c/0825e48b888e2966c14f17034b133d07?family=Gordita-Regular');
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+img{
+    display: block;
+    width: 100%;
+}
+body{
+    font-family: "Hammersmith One";
+    padding: 3rem 8rem;
+}
+.nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 1rem;
+    font-weight: bold;
+    font-family: 'Gordita-bold';
+    margin-bottom: 20px;
+}
+
+.nav a:hover,
+.nav a.active {
+    color: #385177;
+}
+
+.content{
+    
+    margin-top: 2rem;
+    gap:2rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.profile-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.profile-section img {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+.profile-section .profile-name {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.schedule-section {
+    flex: 2;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    justify-items: center;
+}
+.time-slot {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid #50C9C3;
+    border-radius: 5px;
+    color: #50C9C3;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    height: 40px;
+}
+.time-slot:hover {
+    transition: all .2s ease;
+    background-color: #50C9C3;
+    color: #fff;
+}
+.time-slot.disabled {
+    border-color: #ddd;
+    color: #ddd;
+    cursor: not-allowed;
+}
+.time-slot.disabled:hover {
+    background-color: #fff;
+    color: #ddd;
+}

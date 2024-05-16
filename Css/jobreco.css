@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
+@import url('https://db.onlinewebfonts.com/c/c0242a63ef025c10180ad4f1fa95bd19?family=Gordita-Bold');
+@import url('https://db.onlinewebfonts.com/c/0825e48b888e2966c14f17034b133d07?family=Gordita-Regular');
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+img{
+    display: block;
+    width: 100%;
+}
+body{
+    font-family: "Hammersmith One";
+    padding: 3rem 8rem;
+}
+.nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 1rem;
+    font-weight: bold;
+    font-family: 'Gordita-bold';
+    margin-bottom: 20px;
+}
+
+.nav a:hover,
+.nav a.active {
+    color: #385177;
+}
+
+.content{
+    margin-top: 1rem;
+    gap:7rem;
+    display: flex;
+    flex-direction: row;
+}
+
+h1, h2{
+    font-family: "Hammersmith One";
+}
+
+h1 {
+    font-size: 50px;
+}
+
+p{
+    font-family: "Gordita-Regular";
+}
+
+.left{
+    width: 65%;
+    gap:2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.left>button{
+    align-self: flex-end;
+    border-radius: 20px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    font-family: "Gordita-Regular";
+}
+.left>button:hover{
+    background-color: teal;
+    color: white;
+    transition: all .2s ease;
+    border-color: teal;
+    border-style:solid;
+}
+
+h2{
+    font-size: 40px;
+    text-align: center;
+}
+
+.right{
+    color:white;
+    border-radius: 25px;
+    width: 35%;
+    padding: 2rem;
+    background-color: #333B4F;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+.right>button{
+    background-color: inherit;
+    color:white;
+    border-color: white;
+    border-style:solid;
+    border-radius: 20px;
+    padding-left: 2rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    padding-right: 2rem;
+    font-family: "Gordita-Regular";
+    margin-top: 2rem;
+}
+.right>button:hover{
+    background-color: white;
+    color: black;
+    transition: all .2s ease;
+}
+
+button:hover{
+    cursor: pointer;
+}

@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
+@import url('https://db.onlinewebfonts.com/c/c0242a63ef025c10180ad4f1fa95bd19?family=Gordita-Bold');
+@import url('https://db.onlinewebfonts.com/c/0825e48b888e2966c14f17034b133d07?family=Gordita-Regular');
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+img{
+    display: block;
+    width: 100%;
+}
+body{
+    font-family: "Hammersmith One";
+    padding: 3rem 8rem;
+}
+.nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 1rem;
+    font-weight: bold;
+    font-family: 'Gordita-bold';
+    margin-bottom: 20px;
+}
+
+.nav a:hover,
+.nav a.active {
+    color: #385177;
+}
+
+
+
+.content{
+    font-family: "Hammersmith One";
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+/* body {
+    font-family: Arial, sans-serif;
+    margin: 40px;
+    color: black;
+} */
+h2 {
+    color: black;
+    font-size: 2rem;
+}
+h2:hover{
+    cursor: pointer;
+    color: #385177;
+    transition: all .2s ease;
+}
+p {
+    font-size: 1.5rem;
+    line-height: 1.5;
+}

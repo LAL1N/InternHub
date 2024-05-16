@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
+@import url('https://db.onlinewebfonts.com/c/c0242a63ef025c10180ad4f1fa95bd19?family=Gordita-Bold');
+@import url('https://db.onlinewebfonts.com/c/0825e48b888e2966c14f17034b133d07?family=Gordita-Regular');
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+.login{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    background-color: #131724;
+}
+
+.LogoIntern{
+    margin-right: 100px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background-color: white;
+    box-shadow: 5px #131724;
+    border-radius: 0 350px 350px 0;
+    height:100dvh;
+}
+
+.logo{
+    width: 60%;
+}
+.logo2{
+    width:40%;
+    margin-bottom: 25px;
+}
+
+
+.box{
+    gap: 1.5rem;
+    font-family: 'Hammersmith One';
+    justify-self:center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 50px;
+    padding: 25px;
+    min-width: 500px;
+}
+
+.title > h1{
+    text-align: center;
+}
+.container{
+    width: 100%;
+}
+
+.emails{
+    padding: 1rem;
+    width: 100%;
+    border:0;
+    font-family: "Gordita-Regular";
+    border-bottom: 5px solid black;
+}
+
+.emails::placeholder {
+    color: black;
+    font-family: "Gordita-Regular";
+    font-weight: bold;
+    font-size: 1rem;
+    opacity: 1; /* Firefox */
+  }
+
+.pass1{
+    display: flex;
+    align-items: center;
+    border-bottom: 5px solid black;
+}
+
+#password{
+    width: 100%;
+    padding: 1rem;
+    border:0;
+    font-family: "Gordita-Regular";
+   
+}
+
+#password::placeholder {
+    color: black;
+    font-weight: bold;
+    font-family: "Gordita-Regular";
+    font-size: 1rem;
+    opacity: 1; /* Firefox */
+  }
+
+.remember-forgot{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn{
+    padding: 1rem;
+    border-radius: 5px;
+    font-family: "Gordita-Bold";
+    font-weight: bold;
+    width: 100%;
+    border:0;
+    color:black;
+    background-color: #61C3C8;
+    text-decoration: none;
+    text-align: center;
+}
+
+.btn:hover{
+    transition: all .2s ease;
+    color:white;
+    background-color: #385177;
+}
+
+.gboxbtn{
+    padding: 1rem;
+    border-radius: 5px;
+    font-family: "Gordita-Bold";
+    font-weight: bold;
+    width: 100%;
+    border:0;
+    color:black;
+    background-color: #E1E1E1;
+    text-decoration: none;
+    text-align: center;
+}
+
+.gboxbtn:hover{
+    transition: all .2s ease;
+    color:white;
+    background-color: #385177;
+}
+.forgot-pass{
+    text-decoration: none;
+    color:black;
+  
+}
+
+.createaccfont{
+    text-decoration: underline;
+    color:#385177;
+
+}
+
+.remember{
+    margin-right:10px; 
+}
+
+#eyeBtn:hover{
+    cursor: pointer;
+}
+
+input:focus, textarea:focus, select:focus{
+    outline: none;
+}
